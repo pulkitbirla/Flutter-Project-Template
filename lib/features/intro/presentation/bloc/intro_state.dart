@@ -15,16 +15,12 @@ class IntroLoaded extends IntroState {
   final List<String> pages;
   final int currentPageIndex;
 
-  const IntroLoaded({
-required this.pages, this.currentPageIndex = 0});
+  const IntroLoaded({required this.pages, this.currentPageIndex = 0});
 
   @override
   List<Object> get props => [pages, currentPageIndex];
 
-  IntroLoaded copyWith({
-    List<String>? pages,
-    int? currentPageIndex,
-  }) {
+  IntroLoaded copyWith({List<String>? pages, int? currentPageIndex}) {
     return IntroLoaded(
       pages: pages ?? this.pages,
       currentPageIndex: currentPageIndex ?? this.currentPageIndex,

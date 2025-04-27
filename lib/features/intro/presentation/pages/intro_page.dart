@@ -5,7 +5,7 @@ import 'package:go_router/go_router.dart'; // Import go_router
 import '../bloc/intro_bloc.dart';
 
 class IntroPage extends StatefulWidget {
-  const IntroPage({Key? key}) : super(key: key);
+  const IntroPage({super.key});
 
   @override
   State<IntroPage> createState() => _IntroPageState();
@@ -20,7 +20,7 @@ class _IntroPageState extends State<IntroPage> {
   }
 
   void _navigateToNextScreen() {
-    // TODO: Implement actual navigation to the next screen (e.g., home or login)
+    // Implement actual navigation to the next screen (e.g., home or login)
     // Example using go_router:
     // Check if the context is still valid before navigating
     if (mounted) {
@@ -42,7 +42,7 @@ class _IntroPageState extends State<IntroPage> {
                   onPressed: () {
                     context.read<IntroBloc>().add(SkipIntro());
                   },
-                  child: const Text('Skip', style: TextStyle(color: Colors.white)),
+                  child: const Text('Skip', ),
                 );
               }
               return Container(); // Hide button otherwise
