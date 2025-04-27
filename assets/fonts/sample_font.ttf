@@ -1,0 +1,48 @@
+ttf
+/* No direct TTF code, as it's a binary format. This is a conceptual outline. */
+
+/*
+  1. Design your custom font using a font editor like FontForge, Glyphs, or similar.
+  2. Export the font in TrueType Format (.ttf).
+  3. Place this file in your Flutter project's assets directory, like assets/fonts/MyCustomFont.ttf.
+  4. The actual integration in flutter is done in the pubspec.yaml file and main.dart.
+  See example in pubspec.yaml:
+*/
+```
+```yaml
+# In pubspec.yaml:
+
+flutter:
+  fonts:
+    - family: MyCustomFont
+      fonts:
+        - asset: assets/fonts/MyCustomFont.ttf
+```
+```dart
+//In main.dart
+
+//Example of how to use it:
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: Center(
+          child: Text(
+            'Hello, Custom Font!',
+            style: TextStyle(
+              fontFamily: 'MyCustomFont',
+              fontSize: 24,
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
