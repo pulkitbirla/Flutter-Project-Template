@@ -17,6 +17,7 @@ This template is built on the principles of **separation of concerns**. By decou
 *   **Scalable:** Easily add new features without breaking existing ones.
 *   **Maintainable:** Understand and modify code with confidence.
 *   **Testable:** Write unit, widget, and integration tests with ease.
+![image](https://github.com/user-attachments/assets/e3e31ecf-b459-48ce-bd55-a5defc4dcddd)
 
 ---
 
